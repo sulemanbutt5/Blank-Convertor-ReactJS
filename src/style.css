@@ -9,10 +9,23 @@ body{
 .formm{
     background: radial-gradient(silver,black);
     border-radius: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.all{
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
 }
 .divhead{
     margin-top: 20px;
-    font-size: 55px;
+    font-size: 50px;
     color: gold;
     font-weight: bold;
 }
@@ -35,6 +48,7 @@ body{
 input{
     size: 25px;
     block-size: 35px;
+    width: 30%;
     font-size: large;
     border-radius: 12px;
     border-width: 10px;
@@ -44,8 +58,9 @@ input{
 
 }
 select{
-    block-size: 75px;
+    block-size: 70px;
     border-radius: 20px;
+    width: 35%;
     border-width: 10px;
     border-color: goldenrod;
     position: relative;
