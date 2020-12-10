@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from "react"
 import axios from "axios";
-import './index.css'
 import cur from './data'
+import './style.css'
 
 function CurrencyConverter(){
     var [first, setFirst] = useState()
@@ -26,46 +26,52 @@ function CurrencyConverter(){
   
     return (
       <>
-          <header>Blank Convertor</header>
+          <div className="divhead">
+            <header>Blank Convertor</header>
+          </div>
           <br />
           <div className="all">
-              <div className="cal">
+              <div className="numbers">
                   {amount || '0'} {first} = { (amount * rate[`${first}_${second}`]) || '0'} {second}
               </div>
           <br/>
-              <div className="iss">
-                  
-                  <p className='pa'>Input Amount:</p>
-                  <input
-                  type="number"
-                  value={amount}
-                  onChange={(e) => setAmount(e.target.value)}
-                  />
-                  <br/>
-  
-                  <p className='pa'>From:</p>
-                  <select onChange={e => setFirst(e.target.value)}>
-                      <option>Select any Currency</option>
-                      {
-                          cur.map( ([s,n]) =>
-                          (
-                              <option key={s} value={s} >{`${n}  (${s})`}</option>
-                          ))
-                      }
-                  </select>
-                  <br/>
-  
-                  <p className='pa'>To:</p>
-                  <select onChange={e=> setSecond(e.target.value)}>
-                      <option>Select any Currency</option>
-                      {
-                          (cur).map(([s,n]) =>
-                          (
-                              <option key={s} value={s} >{`${n}  (${s})`}</option>
-                          ))
-                      }
-                  </select>
-  
+              <div>
+                <form className="formm">
+                    <br/>
+                    <p className='inputt'>Input Amount:</p>
+                    <input
+                    type="number"
+                    value={amount}
+                    onChange={(e) => setAmount(e.target.value)}
+                    />
+                    <br/>
+    
+                    <p className='fromm'>From:</p>
+                    <select onChange={e => setFirst(e.target.value)}>
+                        <option>Select any Currency</option>
+                        {
+                            cur.map( ([s,n]) =>
+                            (
+                                <option key={s} value={s} >{`${n}  (${s})`}</option>
+                            ))
+                        }
+                    </select>
+                    <br/>
+    
+                    <p className='too'>To:</p>
+                    <select onChange={e=> setSecond(e.target.value)}>
+                        <option>Select any Currency</option>
+                        {
+                            (cur).map(([s,n]) =>
+                            (
+                                <option key={s} value={s} >{`${n}  (${s})`}</option>
+                            ))
+                        }
+                    </select>
+                    <br/>
+                    <br/>
+                    <br/>
+                  </form>
               </div>
         </div>
       </>
