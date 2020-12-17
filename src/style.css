@@ -1,69 +1,51 @@
-body{
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-    background: repeating-radial-gradient(royalblue,black)
-}
-.formm{
-    background: radial-gradient(silver,black);
-    border-radius: 100%;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    
-}
-.all{
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    align-self: center;
-    justify-content: center;
+.boundary{
+    flex:1;
+    background-color: black;
 }
 .divhead{
-    margin-top: 20px;
-    font-size: 50px;
-    color: gold;
+    flex:1;
+    font-size: xx-large;
+    text-align: center;
     font-weight: bold;
+    height: 100px;
+    background: radial-gradient(darkviolet,black);
+    margin-bottom: 20px;
+}
+.all{
+    flex:1;
+    text-align: center;
+    background: linear-gradient(violet,black);
+    height: auto;
 }
 .numbers{
-    font-size: 25px;
-    color: black;
+    font-size: x-large;
+    color: white;
+}
+.formm{
+    flex: 1;
+    font-size: larger;
 }
 .inputt{
-    font-size: 20px;
-    font-weight: bold;    
+
+    font-size: x-large;
+}
+.inputa{
+
+    border-radius: 5px;
+    font-size: x-large;
+    background-color: silver;
 }
 .fromm{
-    font-size: 20px;
-    font-weight: bold;    
+    font-size: x-large;
+    border-radius: 10px;
 }
 .too{
-    font-size: 20px;
-    font-weight: bold;
-}
-input{
-    size: 25px;
-    block-size: 35px;
-    width: 30%;
-    font-size: large;
-    border-radius: 12px;
-    border-width: 10px;
-    border-color: gold;
-    position: relative;
-    
-
+    font-size: x-large;
+    border-radius: 10px;
 }
 select{
-    block-size: 70px;
-    border-radius: 20px;
-    width: 35%;
-    border-width: 10px;
-    border-color: goldenrod;
-    position: relative;
-    font-size: large;
-
+    background-color: silver;
+    flex: 1;
+    height: 40px;
+    border-radius: 10px;
 }

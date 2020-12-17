@@ -25,56 +25,56 @@ function CurrencyConverter(){
       },[first,second])
   
     return (
-      <>
-          <div className="divhead">
-            <header>Blank Convertor</header>
-          </div>
-          <br />
+      <div className='boundary'>    
           <div className="all">
-              <div className="numbers">
-                  {amount || '0'} {first} = { (amount * rate[`${first}_${second}`]) || '0'} {second}
-              </div>
-          <br/>
-              <div>
-                <form className="formm">
-                    <br/>
-                    <p className='inputt'>Input Amount:</p>
-                    <input
-                    type="number"
-                    value={amount}
-                    onChange={(e) => setAmount(e.target.value)}
-                    />
-                    <br/>
-    
-                    <p className='fromm'>From:</p>
-                    <select onChange={e => setFirst(e.target.value)}>
-                        <option>Select any Currency</option>
-                        {
-                            cur.map( ([s,n]) =>
-                            (
-                                <option key={s} value={s} >{`${n}  (${s})`}</option>
-                            ))
-                        }
-                    </select>
-                    <br/>
-    
-                    <p className='too'>To:</p>
-                    <select onChange={e=> setSecond(e.target.value)}>
-                        <option>Select any Currency</option>
-                        {
-                            (cur).map(([s,n]) =>
-                            (
-                                <option key={s} value={s} >{`${n}  (${s})`}</option>
-                            ))
-                        }
-                    </select>
-                    <br/>
-                    <br/>
-                    <br/>
-                  </form>
-              </div>
+            <div className="divhead">
+              <header style={{padding:'30px',color:'#fff'}}>Blank Convertor</header>
+            </div>
+            <div className="numbers">
+                {amount || '0'} {first} = { (amount * rate[`${first}_${second}`]) || '0'} {second}
+            </div>
+            <br/>
+            <div>
+              <form className="formm">
+                <br/>
+                <p className='inputt'>Input Amount:</p>
+                <input
+                  type="number"
+                  value={amount}
+                  onChange={(e) => setAmount(e.target.value)}
+                  className='inputa'
+                  />
+                <br/>
+  
+                <p className='fromm'>From:</p>
+                <select onChange={e => setFirst(e.target.value)}>
+                  <option>Select any Currency</option>
+                    {
+                      cur.map( ([s,n]) =>
+                        (
+                          <option key={s} value={s} >{`${n}  (${s})`}</option>
+                        ))
+                    }
+                </select>
+                <br/>
+  
+                <p className='too'>To:</p>
+                <select onChange={e=> setSecond(e.target.value)}>
+                  <option>Select any Currency</option>
+                    {
+                      (cur).map(([s,n]) =>
+                        (
+                          <option key={s} value={s} >{`${n}  (${s})`}</option>
+                        ))
+                    }
+                </select>
+                <br/>
+                <br/>
+                <br/>
+              </form>
+            </div>
         </div>
-      </>
+      </div>
     );
   }
 

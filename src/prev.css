@@ -1,0 +1,79 @@
+body{
+    flex: 1;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    background: repeating-radial-gradient(royalblue,black)
+}
+.formm{
+    flex:1;
+    background: radial-gradient(silver,black);
+    border-radius: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.all{
+    flex:1;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+}
+.divhead{
+    flex:1;
+    margin-top: 20px;
+    font-size: 50px;
+    color: gold;
+    font-weight: bold;
+}
+.numbers{
+    flex:1;
+    font-size: 25px;
+    color: black;
+}
+.inputt{
+    flex:1;
+    font-size: 20px;
+    font-weight: bold;    
+}
+.fromm{
+    flex:1;
+    font-size: 20px;
+    font-weight: bold;    
+}
+.too{
+    flex:1;
+    font-size: 20px;
+    font-weight: bold;
+}
+input{
+    flex:1;
+    size: 25px;
+    block-size: 35px;
+    width: 30%;
+    font-size: large;
+    border-radius: 12px;
+    border-width: 10px;
+    border-color: gold;
+    position: relative;
+    
+
+}
+select{
+    flex:1;
+    block-size: 70px;
+    border-radius: 20px;
+    width: 35%;
+    border-width: 10px;
+    border-color: goldenrod;
+    position: relative;
+    font-size: large;
+
+}
