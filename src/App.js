@@ -4,8 +4,8 @@ import cur from './data'
 import './style.css'
 
 function CurrencyConverter(){
-    var [first, setFirst] = useState()
-    var [second, setSecond] = useState()
+    var [first, setFirst] = useState('USD')
+    var [second, setSecond] = useState('PKR')
     const [rate, setRate] = useState([])
     const [amount,setAmount] =useState()
   
@@ -68,9 +68,8 @@ function CurrencyConverter(){
                         ))
                     }
                 </select>
-                <br/>
-                <br/>
-                <br/>
+                
+                
               </form>
             </div>
         </div>
