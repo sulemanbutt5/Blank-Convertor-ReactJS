@@ -24,7 +24,6 @@ const cur= [
     ["CAD","Canadian dollar"  ],
     ["CDF","Congolese franc"  ],
     ["CHF","Swiss franc"  ],
-    ["CHF","Swiss franc"  ],
     ["CLP","Chilean peso"  ],
     ["CNY","Chinese yuan"  ],
     ["COP","Colombian peso"  ],
