@@ -4,8 +4,8 @@ import cur from './data'
 import './style.css'
 
 function CurrencyConverter(){
-    var [first, setFirst] = useState('USD')
-    var [second, setSecond] = useState('PKR')
+    var [first, setFirst] = useState()
+    var [second, setSecond] = useState()
     const [rate, setRate] = useState([])
     const [amount,setAmount] =useState()
   
